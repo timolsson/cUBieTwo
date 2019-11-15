@@ -273,3 +273,8 @@ window.addEventListener('keydown', controller.keyListner);
 window.addEventListener('keyup', controller.keyListner);
 
 window.requestAnimationFrame(loop);
+function reStart() { //resets player to start position
+    playerOne.positionX =150; //players start x position
+    playerOne.positionY =350; //players start y position
+    winCondition.style.left = '-40%';
+};
